@@ -1,62 +1,20 @@
 <template>
   <div class="container-fluid m-0 p-0">
-    <div id="home-page" class="full-height">
-      <div class="container-fluid p-0">
-        <div class="row m-0 p-0">
-          <div class="col-12 m-0 p-0">
-            <img
-              src="../assets/banner-for-system.png"
-              style=""
-              class="background d-block"
-              alt=""
-            />
+
+<div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center pb-15">
+              <h2>Merchants</h2>
+              <ul class="p-0">
+                <li style="width: 10px; height: 2px"></li>
+                <li style="width: 20px; height: 3px"></li>
+                <li style="width: 30px; height: 4px"></li>
+                <li style="width: 20px; height: 3px"></li>
+                <li style="width: 10px; height: 2px"></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- <div class="pb-2 my-auto">
-          <div class="col-lg pt-4 my-auto">
-            <div class="text-center mb-3 d-block d-lg-none">
-              <h1 class="display-3">{{ title }}</h1>
-              <h3>find the world</h3>
-            </div>
-            <img id="phesant-img" src="../assets/banner-for-system.png" 
-             alt=""/>
-            
-
-            <div class="text-center mb-3 d-none d-lg-block">
-              <h1 class="display-3">{{ title }}</h1>
-
-            </div>
-            
-          </div> -->
-
-        <!-- <div class="col-lg-6 my-auto my-auto pt-4">
-            <div class="text-center mb-3 d-none d-lg-block">
-              <h1 class="display-3">{{ title }}</h1>
-              <h3>find the world</h3>
-            </div>
-
-            <div class="border p-3 p-md-5 bg-white rounded shadow">
-              <h2>coming soon</h2>
-              <form action="">
-                <div class="form-group">
-                  <label for="emailsignup">reserve your account bla bla</label>
-                  <input
-                    id="emailsignup"
-                    placeholder="enter email"
-                    type="text"
-                    class="form-control"
-                  />
-                  <button type="submit" class="btn btn-success mt-3">
-                    join waiting list
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div> -->
-        <!-- </div> -->
-      </div>
-    </div>
-
     <div id="about" class="p-4 pb-5 pt-5">
       <div class="row">
         <div class="col-lg">
@@ -188,6 +146,10 @@
         </div>
       </div>
     </div>
+
+    <!-- <div id="contact" class="bg-info p-4"></div> -->
+
+    
   </div>
 </template>
 
@@ -203,11 +165,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-span.desc {
-  padding-left: 34px;
-}
-hr {
-  background-color: #f16500;
+hr{
+  background-color: #F16500;
 }
 #home-page {
   background-color: #92d2f2;
@@ -217,13 +176,24 @@ hr {
   -o-background-size: cover;
   background-size: cover;
 }
+.section-title ul li {
+  display: inline-block;
+  background-color: #f16500;
+}
+h2,
+h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #f16500;
+  margin: 0px;
+}
 
 #footer {
   background-color: #252223;
 }
 
 .container-fluid.m-0.p-0 {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .background {
@@ -234,45 +204,22 @@ hr {
   background-size: cover;
 }
 
-body {
+body{
   overflow-x: hidden;
 }
 h1 {
-  color: #f16500;
+  color: #F16500;
 }
-.footer-copyright p {
+.footer-copyright p{
   text-align: center;
   margin-bottom: 0px;
 }
-.full-height {
+#about {
   min-height: 100vh;
 }
-button {
-  background-color: #f16500;
-  color: white;
+button{
+    background-color: #F16500;
+    color: white;
 }
-ul.list-unstyled li {
-  font-size: 14px !important;
-}
-@media screen and (max-width: 759px) {
-  .background {
-    height: 33vh;
-    width: 98vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: right;
-  }
-  #home-page {
-    background-color: #92d2f2;
-    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .full-height {
-    min-height: 33vh;
-  }
-}
+
 </style>

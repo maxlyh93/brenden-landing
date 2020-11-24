@@ -4,8 +4,8 @@
       <img
         class="float-left"
         :src="imagePath"
-        height="40px"
-        width="40px"
+        height="45px"
+        width="70px"
         alt=""
       />
     </figure>
@@ -61,7 +61,7 @@ ul {
   display: flex;
   height: 100%;
   align-items: flex-end;
-  box-shadow: 2px 2px 2px #ccc;
+
   padding-inline-start: 0;
   padding-inline-end: 0;
   z-index: 1;
@@ -100,15 +100,16 @@ i {
     left: -240px;
     transition: 300ms ease all;
     top: 60px;
+    height: 23%;
   }
   ul.active {
     left: 0px;
   }
   figure {
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 10px;
-    left: 2px;
+    top: -5px;
+    left: -5px;
   }
   li {
     width: 100%;

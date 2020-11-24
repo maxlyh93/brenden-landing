@@ -8,26 +8,34 @@
 		hoverBackground="#ddd"
     />
     <router-view />
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Navi from "@/components/Navi";
+import Footer from "@/components/Footer";
 export default {
   components: {
     Navi,
+    Footer,
   },
   data: () => ({
     navLinks: [
       {
-        text: "Contact",
-        path: "/contact",
-        icon: "ion-ios-megaphone",
+        text: "HOME",
+        path: "/",
+        icon: "ion-ios-home",
       },
       {
-        text: "About",
-        path: "/aboutUs",
+        text: "MERCHANTS",
+        path: "/merchants",
         icon: "ion-ios-business",
+      },
+      {
+        text: "ABOUT",
+        path: "/aboutUs",
+        icon: "ion-ios-people",
       },
     ],
   }),
@@ -38,13 +46,13 @@ export default {
 @import "https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css";
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-
-.full-height {
-  min-height: 100vh;
+ul.list-unstyled li {
+    font-size: 16px !important;
 }
 </style>
