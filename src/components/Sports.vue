@@ -18,6 +18,27 @@
       <div class="row">
         
 
+                <div class="col-lg">
+            <img
+              v-bind:src="'https://mall.etrenz.com/attachment/' + store.data.list[1].logo"
+              height="120"
+              class="m-4"
+              alt=""
+            />
+            <h6 class="text-uppercase font-weight-bold">{{store.data.list[1].title}}</h6>
+            <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px; height: 2px"
+            />
+            <h6 class="ml-md-4 mr-md-4">
+              
+            </h6>
+
+            <button type="button" class="btn">
+              <a v-bind:href="store.data.list[1].shortenUrl">Order Now !</a>
+            </button>
+        </div>
+
         <div class="col-lg">
           <img
             src="../assets/icons/map-pin.svg"
@@ -31,11 +52,10 @@
             style="width: 120px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            We are looking forward to expand worldwide! Contact us for
-            collaboration.
+
           </h6>
           <button type="button" class="btn">
-            &nbsp; &nbsp;&nbsp;I Am Merchant!&nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
         </div>
       </div>
@@ -46,11 +66,19 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
+      store: {},
       title: "Digitalize Your Business And Make It Fast And Easy",
+      mainurl: "https://mall.etrenz.com/attachment/",
     };
+  },
+  created() {
+    axios
+      .get("https://api.etrenz.com/etrenz/api/user/merchant/store/list")
+      .then((response) => (this.store = response.data));
   },
 };
 </script>

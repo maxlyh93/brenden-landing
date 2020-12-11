@@ -10,6 +10,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "mdbvue": "^6.7.1",

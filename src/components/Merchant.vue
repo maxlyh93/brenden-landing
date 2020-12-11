@@ -30,8 +30,7 @@
             style="width: 100px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent.
+
           </h6>
           <router-link to="/beverage">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
@@ -51,8 +50,7 @@
             style="width: 100px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent.
+
           </h6>
           <router-link to="/food">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
@@ -72,8 +70,7 @@
             style="width: 110px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent.
+
           </h6>
           <router-link to="/hospitality">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
@@ -95,8 +92,7 @@
             style="width: 100px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent.
+   
           </h6>
           <router-link to="/sports">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
@@ -116,8 +112,7 @@
             style="width: 120px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent.
+   
           </h6>
           <router-link to="/electronic">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
@@ -137,11 +132,10 @@
             style="width: 120px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            We are looking forward to expand worldwide! Contact us for
-            collaboration.
+
           </h6>
           <button type="button" class="btn">
-            &nbsp; &nbsp;&nbsp;I Am Merchant!&nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
         </div>
       </div>

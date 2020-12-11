@@ -17,22 +17,23 @@
     <div id="about" class="p-4">
       <div class="row">
         <div class="col-lg">
-          <img
-            src="../assets/Kazoku-Dolphin-Logo.jpeg"
-            height="120"
-            class="m-4"
-            alt=""
-          />
-          <h6 class="text-uppercase font-weight-bold">Kazoku Water</h6>
-          <hr
-            class="mb-4 mt-0 d-inline-block mx-auto"
-            style="width: 100px; height: 2px"
-          />
-          <h6 class="ml-md-4 mr-md-4">
-            Drink The Finest Water, Kazoku Always At Your Service.
-          </h6>
-
-            <button type="button" class="btn"><a href="https://kazoku.com.my/">Visit Website</a></button>
+            <img
+              v-bind:src="'https://mall.etrenz.com/attachment/' + store.data.list[0].logo"
+              height="120"
+              class="m-4"
+              alt=""
+            />
+            <h6 class="text-uppercase font-weight-bold">{{store.data.list[0].title}}</h6>
+            <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 100px; height: 2px"
+            />
+            <h6 class="ml-md-4 mr-md-4">
+            
+            </h6>
+            <button type="button" class="btn">
+              <a v-bind:href="store.data.list[0].shortenUrl">Order Now !</a>
+            </button>
 
         </div>
 
@@ -49,11 +50,10 @@
             style="width: 120px; height: 2px"
           />
           <h6 class="ml-md-4 mr-md-4">
-            We are looking forward to expand worldwide! Contact us for
-            collaboration.
+
           </h6>
           <button type="button" class="btn">
-            &nbsp; &nbsp;&nbsp;I Am Merchant!&nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
         </div>
       </div>
@@ -64,28 +64,36 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
+      store: {},
       title: "Digitalize Your Business And Make It Fast And Easy",
+      mainurl: "https://mall.etrenz.com/attachment/",
     };
+  },
+  created() {
+    axios
+      .get("https://api.etrenz.com/etrenz/api/user/merchant/store/list")
+      .then((response) => (this.store = response.data));
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-a:hover{
-    text-decoration: none;
-    color: black;
+a:hover {
+  text-decoration: none;
+  color: black;
 }
-a:link{
-    text-decoration: none;
-    color:white;
+a:link {
+  text-decoration: none;
+  color: white;
 }
-a:visited{
-    text-decoration: none;
-    color:white;
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 hr {
   background-color: #f16500;
@@ -146,6 +154,6 @@ button {
 @media screen and (max-width: 759px) {
   .col-lg {
     padding-top: 40px;
-}
+  }
 }
 </style>
