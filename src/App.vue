@@ -2,7 +2,7 @@
   <div id="app">
     <Navi 
     :nav-links="navLinks"
-    :image-path="require('./assets/etrenz-2.png')"
+    :image-path="require('./assets/etrenznav1.png')"
     background="#fff"
 		link-color="#777"
 		hoverBackground="#ddd"

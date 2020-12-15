@@ -278,7 +278,7 @@ ul.list-unstyled li {
 @media screen and (max-width: 1024px) {
   .background {
     height: 40vh;
-    width: 98vw;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -295,5 +295,114 @@ ul.list-unstyled li {
   .full-height {
     min-height: 40vh;
   }
+}
+@media screen and (max-width: 416px) {
+  .background {
+    height: 23vh;
+    width: 98vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  #home-page {
+    background-color: #92d2f2;
+    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-height {
+    min-height: 23vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .background {
+    height: 34vh;
+    width: 98vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  #home-page {
+    background-color: #92d2f2;
+    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-height {
+    min-height: 34vh;
+  }
+}
+@media screen and (max-width: 376px) {
+  .background {
+    height: 23vh;
+    width: 96vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  #home-page {
+    background-color: #92d2f2;
+    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-height {
+    min-height: 23vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .background {
+    height: 23vh;
+    width: 96vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  #home-page {
+    background-color: #92d2f2;
+    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-height {
+    min-height: 23vh;
+  }
+
+  
+}
+@media screen and (max-width: 321px) {
+  .background {
+    height: 23vh;
+    width: 94vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  #home-page {
+    background-color: #92d2f2;
+    background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .full-height {
+    min-height: 23vh;
+  }
+
+  
 }
 </style>

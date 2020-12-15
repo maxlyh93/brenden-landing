@@ -16,27 +16,24 @@
     </div>
     <div id="about" class="p-4">
       <div class="row">
-        
-
-                <div class="col-lg">
-            <img
-              v-bind:src="'https://mall.etrenz.com/attachment/' + store.data.list[1].logo"
-              height="120"
-              class="m-4"
-              alt=""
-            />
-            <h6 class="text-uppercase font-weight-bold">{{store.data.list[1].title}}</h6>
-            <hr
-              class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 100px; height: 2px"
-            />
-            <h6 class="ml-md-4 mr-md-4">
-              
-            </h6>
-
-            <button type="button" class="btn">
-              <a v-bind:href="store.data.list[1].shortenUrl">Order Now !</a>
-            </button>
+        <div class="col-lg">
+          <img
+            v-bind:src="'https://mall.etrenz.com/attachment/' + logo"
+            height="120"
+            class="m-4"
+            alt=""
+          />
+          <h6 class="text-uppercase font-weight-bold">
+            {{merchanttitle}}
+          </h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 100px; height: 2px"
+          />
+          <h6 class="ml-md-4 mr-md-4"></h6>
+          <button type="button" class="btn">
+            <a v-bind:href="urllink">Order Now !</a>
+          </button>
         </div>
 
         <div class="col-lg">
@@ -51,9 +48,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 120px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <button type="button" class="btn">
             &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
@@ -71,6 +66,10 @@ export default {
   data() {
     return {
       store: {},
+      merchanttitle:null,
+      urllink:null,
+      logo:null,
+      listarry:null,
       title: "Digitalize Your Business And Make It Fast And Easy",
       mainurl: "https://mall.etrenz.com/attachment/",
     };
@@ -78,7 +77,22 @@ export default {
   created() {
     axios
       .get("https://api.etrenz.com/etrenz/api/user/merchant/store/list")
-      .then((response) => (this.store = response.data));
+      .then((response) => {
+        let filterdata = response.data.data.list.filter((el) => {
+          return el.id === 2;
+        });
+
+        // this.listarray = filterdata;
+        this.merchanttitle = filterdata[0].title
+        this.urllink = filterdata[0].shortenUrl
+        this.logo = filterdata[0].logo
+        console.log("get data list");
+        console.log(filterdata);
+        console.log(this.urllink)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>
@@ -100,14 +114,7 @@ a:visited{
 hr {
   background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .section-title ul li {
   display: inline-block;
   background-color: #f16500;

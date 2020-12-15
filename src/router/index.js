@@ -2,6 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import LandingPage from '@/components/LandingPage'
 import AboutUs from '@/components/AboutUs'
+import Merchant from '@/components/Merchant'
+import Beverage from '@/components/Beverage'
+import Food from '@/components/Food'
+import Hospitality from '@/components/Hospitality'
+import Sports from '@/components/Sports'
+import Electronic from '@/components/Electronic'
 
 Vue.use(Router)
 
@@ -18,7 +24,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/AboutUs.vue') }
+    component: AboutUs
   },
   {
     path: '/merchants',
@@ -26,7 +32,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Merchant.vue') }
+    component: Merchant
   },
   {
     path: '/beverage',
@@ -34,7 +40,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Beverage.vue') }
+    component: Beverage
   },
   {
     path: '/food',
@@ -42,7 +48,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Food.vue') }
+    component: Food
   },
   {
     path: '/hospitality',
@@ -50,7 +56,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Hospitality.vue') }
+    component: Hospitality
   },
   {
     path: '/sports',
@@ -58,7 +64,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Sports.vue') }
+    component: Sports
   },
   {
     path: '/electronic',
@@ -66,7 +72,7 @@ export default new Router({
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => { return import('../components/Electronic.vue') }
+    component: Electronic
   },
   ]
 })

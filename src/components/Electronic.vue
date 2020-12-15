@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="section-title text-center pb-15">
-          <h2>Electronics</h2>
+          <h2>Sports</h2>
           <ul class="p-0">
             <li style="width: 10px; height: 2px"></li>
             <li style="width: 20px; height: 3px"></li>
@@ -16,7 +16,25 @@
     </div>
     <div id="about" class="p-4">
       <div class="row">
-        
+        <div class="col-lg">
+          <img
+            v-bind:src="'https://mall.etrenz.com/attachment/' + logo"
+            height="120"
+            class="m-4"
+            alt=""
+          />
+          <h6 class="text-uppercase font-weight-bold">
+            {{merchanttitle}}
+          </h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 100px; height: 2px"
+          />
+          <h6 class="ml-md-4 mr-md-4"></h6>
+          <button type="button" class="btn">
+            <a v-bind:href="urllink">Order Now !</a>
+          </button>
+        </div>
 
         <div class="col-lg">
           <img
@@ -30,12 +48,9 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 120px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-            We are looking forward to expand worldwide! Contact us for
-            collaboration.
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <button type="button" class="btn">
-            &nbsp; &nbsp;&nbsp;I Am Merchant!&nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
         </div>
       </div>
@@ -46,11 +61,38 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
+      store: {},
+      merchanttitle:null,
+      urllink:null,
+      logo:null,
+      listarry:null,
       title: "Digitalize Your Business And Make It Fast And Easy",
+      mainurl: "https://mall.etrenz.com/attachment/",
     };
+  },
+  created() {
+    axios
+      .get("https://api.etrenz.com/etrenz/api/user/merchant/store/list")
+      .then((response) => {
+        let filterdata = response.data.data.list.filter((el) => {
+          return el.id === 5;
+        });
+
+        // this.listarray = filterdata;
+        this.merchanttitle = filterdata[0].title
+        this.urllink = filterdata[0].shortenUrl
+        this.logo = filterdata[0].logo
+        console.log("get data list");
+        console.log(filterdata);
+        console.log(this.urllink)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
 };
 </script>
@@ -72,14 +114,7 @@ a:visited{
 hr {
   background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .section-title ul li {
   display: inline-block;
   background-color: #f16500;

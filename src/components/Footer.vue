@@ -3,13 +3,13 @@
     <div class="container text-center text-md-left mt-0">
       <div class="row pb-5">
         <div class="col-md-3 mx-auto mb-2">
-          <img
-            src="../assets/etrenz-2.png"
+          <!-- <img
+            src="../assets/etrenz-2-min.png"
             height="180px"
             width="70%"
             class="m-4"
             alt=""
-          />
+          /> -->
         </div>
 
         <div class="col-md-4 mx-auto bm-4 mt-4">
@@ -81,14 +81,7 @@ span.desc {
 hr {
   background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 #footer {
   background-color: #252223;

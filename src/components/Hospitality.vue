@@ -16,8 +16,6 @@
     </div>
     <div id="about" class="p-4">
       <div class="row">
-        
-
         <div class="col-lg">
           <img
             src="../assets/icons/map-pin.svg"
@@ -57,29 +55,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-a:hover{
-    text-decoration: none;
-    color: black;
+a:hover {
+  text-decoration: none;
+  color: black;
 }
-a:link{
-    text-decoration: none;
-    color:white;
+a:link {
+  text-decoration: none;
+  color: white;
 }
-a:visited{
-    text-decoration: none;
-    color:white;
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 hr {
   background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .section-title ul li {
   display: inline-block;
   background-color: #f16500;

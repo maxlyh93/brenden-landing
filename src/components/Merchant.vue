@@ -1,20 +1,19 @@
 <template>
   <div class="container-fluid m-0 p-0">
-
-<div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title text-center pb-15">
-              <h2>Merchants</h2>
-              <ul class="p-0">
-                <li style="width: 10px; height: 2px"></li>
-                <li style="width: 20px; height: 3px"></li>
-                <li style="width: 30px; height: 4px"></li>
-                <li style="width: 20px; height: 3px"></li>
-                <li style="width: 10px; height: 2px"></li>
-              </ul>
-            </div>
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center pb-15">
+          <h2>Merchants</h2>
+          <ul class="p-0">
+            <li style="width: 10px; height: 2px"></li>
+            <li style="width: 20px; height: 3px"></li>
+            <li style="width: 30px; height: 4px"></li>
+            <li style="width: 20px; height: 3px"></li>
+            <li style="width: 10px; height: 2px"></li>
+          </ul>
         </div>
+      </div>
+    </div>
     <div id="about" class="p-4 pb-5 pt-5">
       <div class="row">
         <div class="col-lg">
@@ -29,9 +28,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 100px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <router-link to="/beverage">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
           </router-link>
@@ -49,9 +46,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 100px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <router-link to="/food">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
           </router-link>
@@ -69,9 +64,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 110px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <router-link to="/hospitality">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
           </router-link>
@@ -91,9 +84,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 100px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-   
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <router-link to="/sports">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
           </router-link>
@@ -111,9 +102,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 120px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-   
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <router-link to="/electronic">
             <button type="button" class="btn"><a> Browse Merchants</a></button>
           </router-link>
@@ -131,9 +120,7 @@
             class="mb-4 mt-0 d-inline-block mx-auto"
             style="width: 120px; height: 2px"
           />
-          <h6 class="ml-md-4 mr-md-4">
-
-          </h6>
+          <h6 class="ml-md-4 mr-md-4"></h6>
           <button type="button" class="btn">
             &nbsp; &nbsp;&nbsp;Collaborate !&nbsp; &nbsp;&nbsp;
           </button>
@@ -142,8 +129,6 @@
     </div>
 
     <!-- <div id="contact" class="bg-info p-4"></div> -->
-
-    
   </div>
 </template>
 
@@ -159,17 +144,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-hr{
-  background-color: #F16500;
+hr {
+  background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .section-title ul li {
   display: inline-block;
   background-color: #f16500;
@@ -187,7 +165,7 @@ h3 {
 }
 
 .container-fluid.m-0.p-0 {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .background {
@@ -198,22 +176,21 @@ h3 {
   background-size: cover;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 h1 {
-  color: #F16500;
+  color: #f16500;
 }
-.footer-copyright p{
+.footer-copyright p {
   text-align: center;
   margin-bottom: 0px;
 }
 #about {
   min-height: 100vh;
 }
-button{
-    background-color: #F16500;
-    color: white;
+button {
+  background-color: #f16500;
+  color: white;
 }
-
 </style>

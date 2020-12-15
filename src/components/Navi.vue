@@ -1,11 +1,11 @@
 <template>
   <nav :style="{ background: background || '#333' }">
-    <figure class="image-logo" @click="toggleNav">
+    <figure class="image-logo" v-on:click="toggleNav">
       <img
         class="float-left"
         :src="imagePath"
-        height="45px"
-        width="70px"
+        height="25px"
+        width="130px"
         alt=""
       />
     </figure>
@@ -77,9 +77,10 @@ li {
   list-style-type: none;
   padding: 7px 20px;
 }
-img {
-  margin-bottom: 0px;
-  margin-left: 10px;
+img.float-left {
+    margin-top: 10px;
+    height: 35px;
+    margin-left: 5px;
 }
 figure {
   cursor: pointer;
@@ -122,5 +123,10 @@ i {
     justify-content: space-between;
     margin-right: 13px;
   }
+img.float-left {
+    margin-top: 10px;
+    height: 25px;
+    margin-left: 10px;
+}
 }
 </style>

@@ -72,14 +72,7 @@ a:visited{
 hr {
   background-color: #f16500;
 }
-#home-page {
-  background-color: #92d2f2;
-  background: url("../assets/light-1282314_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .section-title ul li {
   display: inline-block;
   background-color: #f16500;

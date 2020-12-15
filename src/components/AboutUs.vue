@@ -63,7 +63,7 @@
 
           <div class="col-lg-5 offset-lg-1">
             <div class="about-image">
-              <img src="../assets/etrenz-2.png" alt="about" />
+              <!-- <img src="../assets/etrenz-2-min.png" alt="about" /> -->
             </div>
           </div>
         </div>
